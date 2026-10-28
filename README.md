@@ -1,40 +1,66 @@
-# Deep Learning 2 Assignments
+# 🧠 Deep Learning & Neural Network Foundations
 
-This repository contains the solutions to two assignments focused on deep learning concepts. The first assignment covers K-Nearest Neighbors (KNN), Support Vector Machines (SVM), and Neural Networks. The second assignment explores Convolutional Neural Networks (CNNs) and the effects of different CNN parameters. Both assignments also analyze the impact of hyperparameters on model performance.
+<div align="center">
 
-## Assignment 1: KNN, SVM, and Neural Network
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/Deep%20Learning-PyTorch%20%7C%20TorchVision-EE4C2C.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-F7931E.svg?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Academic](https://img.shields.io/badge/Hacettepe%20University-Computer%20Engineering-990000.svg)](https://cs.hacettepe.edu.tr/)
 
-The first assignment aims to familiarize you with three fundamental supervised learning algorithms: K-Nearest Neighbors (KNN), Support Vector Machines (SVM), and Neural Networks.
+**Comprehensive implementations and empirical investigations of foundational Machine Learning and Deep Learning architectures: KNN, Support Vector Machines (SVM), Multi-Layer Perceptrons (MLP), and Convolutional Neural Networks (CNN) with architectural hyperparameter ablation studies.**
 
-### Tasks
+</div>
 
-1. Implement and evaluate KNN: I will implement the KNN algorithm from scratch and evaluate its performance on a given dataset. I should experiment with different values of the hyperparameter 'k' to observe its effect on accuracy.
+---
 
-2. Implement and evaluate SVM: I will implement an SVM classifier using a library or framework of your choice (e.g., scikit-learn) and evaluate its performance on a given dataset. Experiment with different values of the hyperparameter 'C' (regularization parameter) and observe its impact on the decision boundary and accuracy.
+## 📌 Repository Overview
 
-3. Implement and evaluate Neural Network: I will implement a simple neural network using a deep learning framework (e.g., TensorFlow, PyTorch). Train the network on a provided dataset and examine the effect of different hyperparameters such as learning rate, batch size, and the number of hidden layers.
+This repository contains rigorous implementations, experiments, and technical reports exploring supervised learning and deep representation learning:
 
-## Assignment 2: CNN and CNN Parameters
+1. **Assignment 1: Classical Machine Learning & Neural Network Baselines**
+   - **K-Nearest Neighbors (KNN):** Implemented from scratch with Euclidean distance metrics and hyperparameter ablation on neighbor count ($k$).
+   - **Support Vector Machines (SVM):** Maximum margin optimization, linear vs. RBF kernels, and $C$ regularization tuning.
+   - **Multi-Layer Perceptron (MLP):** Feedforward neural network with backpropagation, gradient descent, batch normalization, and learning rate scheduling.
 
-The second assignment focuses on Convolutional Neural Networks (CNNs) and investigates the impact of different CNN parameters on model performance.
+2. **Assignment 2: Convolutional Neural Networks (CNN) & Hyperparameter Ablations**
+   - **CNN Architecture Design:** Custom convolutional layer stacking, max pooling, feature map flattening, and dense decision layers.
+   - **Parameter Sensitivity Analysis:** Empirical impact of kernel filter sizes ($3\times3$ vs $5\times5$), stride, zero-padding, activation functions (ReLU, LeakyReLU), and Dropout regularization on validation convergence.
 
-### Tasks
+---
 
-1. Implement and evaluate a CNN: I will implement a CNN using a deep learning framework of your choice and evaluate its performance on a given dataset. Experiment with different architectural choices such as the number of convolutional layers, pooling layers, and fully connected layers. Observe the effect of these choices on model accuracy and training time.
+## 📂 Project Structure
 
-2. Analyze the effect of CNN parameters: I will explore the effects of various CNN parameters on model performance. These parameters may include kernel size, stride, padding, activation functions, regularization techniques (e.g., dropout), and optimizer choices. Conduct experiments by varying these parameters and carefully analyze the impact on model accuracy, convergence speed, and generalization.
+```ascii
+Deep_learning_assignments/
+├── ass1/                        # Assignment 1: KNN, SVM, and Neural Networks
+│   ├── Code/                    # Implementation scripts and Jupyter notebooks
+│   ├── Figures/                 # Decision boundaries, ROC curves & loss plots
+│   ├── Report/                  # Comprehensive academic report (.pdf)
+│   └── assignment/              # Problem statements and evaluation criteria
+├── ass2/                        # Assignment 2: CNN Architectures & Parameter Studies
+│   ├── Code/                    # PyTorch CNN training and evaluation scripts
+│   ├── Figures/                 # Feature maps, training loss & accuracy curves
+│   └── Report/                  # Technical ablation report
+├── Code/                        # Shared preprocessing pipelines
+└── README.md                    # Project documentation
+```
 
-## Contributing ##
-Contributions to this repository are welcome! If you discover any issues or have ideas for improvements, please open an issue or submit a pull request. Your contributions can help enhance the learning experience for others.
+---
 
-## License
+## 🚀 Getting Started
 
-This repository is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code for personal and commercial purposes.
+```bash
+# Clone the repository
+git clone https://github.com/huseyin-yigit-ulker/Deep_learning_assignments.git
+cd Deep_learning_assignments
 
+# Install dependencies
+pip install torch torchvision scikit-learn numpy pandas matplotlib jupyter
+```
 
+---
 
-
-## Contact
-If you have any questions, suggestions, or feedback, please
-
-Happy coding!
+<div align="center">
+Developed by <a href="https://github.com/huseyin-yigit-ulker">Hüseyin Yiğit Ülker</a>
+</div>
